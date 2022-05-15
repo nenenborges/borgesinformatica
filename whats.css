@@ -1,0 +1,47 @@
+
+.whatsapp .wtsapp{
+    position: fixed;
+    transform: all .5s ease;
+    display: block;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(0,0,0,0.15);
+    border-radius: 50%;
+    color: #fff;
+    
+    bottom: 20px;
+    right:  30px;
+    border: 0;
+    z-index: 99999;
+    width: 70px;
+    height: 65px;
+    line-height: 50px;
+}
+.whatsapp .wtsapp:before{
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 70px;
+    bottom: 5px;
+    transform: translateX(-50%) translateY(-50%);
+    display: block;
+    width: 60px;
+    height: 60px;
+    background-color: #0aa30a;
+    border-radius: 50%;
+    -webkit-animation:pulse-border 1500ms ease-out infinite;
+    animation: pulse-border 1500ms ease-out infinite;
+    overflow: hidden;
+    
+    
+ }
+
+.whatsapp .wtsapp:focus{
+    border: none;
+    outline: none;
+
+ }
+
+ @keyframes pulse-border{
+     0%{transform: translateX(-50%) translateX(-50%) translatez(0) scale(1); opacity: 1;}
+     100%{transform: translateX(-50%) translateX(-50%) translatez(0) scale(1.5); opacity: 0;}
+ }

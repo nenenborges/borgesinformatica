@@ -1,0 +1,168 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana,  sans-serif;
+    
+}
+
+.principal{
+    background-size:cover;
+    height:100vh;
+    background-image: linear-gradient(rgb(28,28,28),rgba(10, 10, 10, 0.589)),url(imagens/fundo.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.navbar{
+    height: 80px;
+    width: 100%;
+    background: rgba(10, 10, 10, 0.397);
+}
+.logo{
+    width: 170px;
+    height: auto;
+    padding: 5px 20px;
+}
+.navbar ul{
+        float: right;
+        margin: 10px
+}
+.navbar ul li{
+        list-style: none;
+        margin: 0 3px;
+        display: inline-block;
+        line-height: 50px;
+}
+.navbar ul li a{
+        text-decoration: none;
+        color: white;
+        padding: 6px 8px;
+        font-size: 15px;
+        font-family:'Roboto', sans-serif;
+        transition: .4s;
+
+}
+
+.navbar ul li a:hover{
+    background: #0064006c;
+    border: 1px solid #006400;
+    border-radius: 10px;
+
+
+
+}
+.principal .center{
+    position:absolute;
+    top: 25%;
+    left: 5%;
+    font-family: sans-serif;
+    user-select:none;
+
+}
+
+.center h1{
+    color: white;
+    font-size: 40px;
+    font-weight:bold;
+    width: 100%;
+    left: 20px;
+    padding-left: 2rem;
+
+}
+
+
+.center h2{
+    color: white;
+    font-size: 20px;
+    font-weight:bold;
+    width: 100%;
+    margin-top: 10px;
+    padding-left: 2rem;
+    left: 20px;
+}
+
+
+.center p{
+    color: white;
+    font-size: 15px;
+    padding-top: 3px;
+    padding-left: 2rem;
+}
+
+.btn{
+    position: absolute;
+    margin: 35px 30px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+.button{
+    position: relative;
+    box-shadow: 16px 14 20px  #0064006c;
+    align-items: center;
+    justify-content: center;
+    height: 35px;
+    width: 205px;
+    font-weight: bold;
+    outline: none;
+    cursor: pointer;
+    border-radius: 25px;
+    display: flex;
+    overflow: hidden;
+    
+    
+    
+
+}
+
+
+.button::before{
+    content: "";
+    background:linear-gradient( #1599042a,#6eccc3 );
+    width: 205px;
+    height: 80px;
+    border-radius: 25px;
+    position: absolute;
+    animation: efeito 5s ease infinite;
+    
+    
+   
+}
+
+
+
+@keyframes efeito {
+    0% {transform: rotate(0deg) }
+    
+    100% {transform: rotate(360deg) }
+}
+
+
+
+.button a{
+   position: absolute;
+   z-index: 1;
+   display: block;
+   justify-content: center;
+   width: 200px;
+   height: 30px;
+   background: #006400;
+   border-radius: 25px;
+   color: #fff;
+
+}
+.botao{
+    color: #fff;
+    background: none;
+    text-align: center;
+    justify-content: center;
+    border: none;
+}
+.button a:hover{
+    background: #284902;
+    
+}

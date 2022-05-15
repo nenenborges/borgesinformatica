@@ -1,0 +1,86 @@
+.center .forma{
+    align-items: center;
+    margin: auto;
+    margin-top:  10px;
+    right: 10px;
+
+}
+.forma{
+    position:absolute;
+    display: flex;
+    text-align: center;
+    height: 60%;
+    width: 60%;
+    /*border: 1px solid black;8*/
+    right: 20px;
+    top: 70px;
+    background-color: rgba(0, 0, 0, 0.671);
+    box-shadow: inset -5px -5px rgba(0, 26, 4, 0.349);
+    border-radius: 25px;
+    transition: opacity .5s, visibility 0s linear .5s;
+    z-index: 1;
+
+}
+
+.forma .ig{
+    width: 35px;
+    height: 30px;
+    position: absolute;
+    right: 95px;
+    font-size: 20px;
+    font-weight: 300;
+    bottom: 45px;
+    
+    
+}
+
+.forma .zap{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    left: 30px;
+    font-size: 20px;
+    font-weight: 300;
+    bottom: 45px;
+    
+}
+#popup{
+    position: fixed;
+    display: none;
+    
+}
+.close{
+    position: absolute;
+    top: 5px;
+    right: 20px;
+    font-size: 20px;
+    font-weight: 300;
+    text-decoration: none;
+    color: chartreuse;
+}
+#popup:target{
+    transition-delay: 0s;
+    display: block;
+}
+
+.forma h6{
+    color: white;
+    position: absolute;
+    right: 15px;
+    font-size: 11px;
+    font-weight: 300;
+    bottom: 50px;
+    margin: 5px;
+    font-size: 10;
+}
+
+.forma p{
+    color: white;
+    position: absolute;
+    left: 25px;
+    font-size: 10px;
+    font-weight: 300;
+    bottom: 50px;
+    margin: 5px;
+    font-size: 10;
+}

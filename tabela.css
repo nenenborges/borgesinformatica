@@ -1,0 +1,121 @@
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana,  sans-serif;
+    
+}
+
+.fundo{
+    background-size:cover;
+    height:100vh;
+    background-image: linear-gradient(rgb(28,28,28),rgba(0,0,0,0.4)),url(imagens/fundo.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.navbar{
+    height: 80px;
+    width: 100%;
+    background: rgba(10, 10, 10, 0.397);
+}
+.logo{
+    width: 170px;
+    height: auto;
+    padding: 5px 20px;
+}
+.navbar ul{
+        float: right;
+        margin: 10px
+}
+.navbar ul li{
+        list-style: none;
+        margin: 0 3px;
+        display: inline-block;
+        line-height: 50px;
+}
+.navbar ul li a{
+        text-decoration: none;
+        color: white;
+        padding: 6px 8px;
+        font-size: 15px;
+        font-family:'Roboto', sans-serif;
+        transition: .4s;
+
+}
+
+.navbar ul li a:hover{
+    background: #0064006c;
+    border: 1px solid #006400;
+    border-radius: 10px;
+
+
+
+}
+.fundo .center{
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    font-family: sans-serif;
+    user-select:none;
+
+}
+
+.email p{
+color: white;
+height:80px;
+position:fixed;
+bottom: 2px;
+right: 40px;
+}
+.slider{
+    width:95%;
+    height:400px;
+    margin: auto;
+    position:relative;
+    place-items: center;
+    display:grid;
+    border-radius:30px;
+    background-size: cover;
+    overflow: hidden;
+
+
+}
+
+.slider-play{
+    display:flex;
+    width:calc(250px * 18);
+    animation: scroll 40s linear infinite;
+}
+
+.slider-play:hover{
+    animation-play-state: paused;
+}
+
+@keyframes scroll{
+    0%{
+        transform: translatex(0);
+    }
+    100%{
+        transform: translatex(calc(-250px *9))
+    }
+}
+
+.slide{
+    height: 200px;
+    width: 250px;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    perspective: 100px;
+}
+img{
+    width:100%;
+    transition: transform 1s;
+}
+
+img:hover{
+transform:translatez(20px);
+}
