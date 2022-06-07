@@ -1,0 +1,74 @@
+.foot{
+    
+    background:rgba(10, 10, 10, 0.397);
+    height: 22%;
+    width: 100%;
+    color: white;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    
+}
+
+
+
+.cartoes{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+
+.visa{
+   
+    width:50px;
+    height: 40px;
+   background-size: 100% 100%;
+    background-image: url(imagens/visa.png);
+    background-color: white;
+    margin: 10px;
+   
+}
+
+.master{
+    width:50px;
+    height: 40px;
+   background-size: 100% 100%;
+    background-image: url(imagens/master.png);
+    background-color: white;
+    margin: 10px;
+   
+}
+
+.hiper{
+    width:50px;
+    height: 40px;
+   background-size: 100% 100%;
+    background-image: url(imagens/hiper.png);
+    background-color: white;
+    margin: 10px;
+   
+}
+
+.elo{
+    width:50px;
+    height: 40px;
+   background-size: 100% 100%;
+    background-image: url(imagens/elo.png);
+    background-color: white;
+    margin: 10px;
+   
+}
+
+.pix{
+    width:50px;
+    height: 40px;
+   background-size: 100% 100%;
+    background-image: url(imagens/pix.png);
+    background-color: white;
+    margin: 10px;
+   
+}
+
+
