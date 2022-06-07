@@ -1,4 +1,3 @@
-
 *{
     margin:0;
     padding: 0;
@@ -63,59 +62,3 @@
 
 }
 
-.email p{
-color: white;
-height:80px;
-position:fixed;
-bottom: 2px;
-right: 40px;
-}
-.slider{
-    width:95%;
-    height:400px;
-    margin: auto;
-    position:relative;
-    place-items: center;
-    display:grid;
-    border-radius:30px;
-    background-size: cover;
-    overflow: hidden;
-
-
-}
-
-.slider-play{
-    display:flex;
-    width:calc(250px * 18);
-    animation: scroll 40s linear infinite;
-}
-
-.slider-play:hover{
-    animation-play-state: paused;
-}
-
-@keyframes scroll{
-    0%{
-        transform: translatex(0);
-    }
-    100%{
-        transform: translatex(calc(-250px *9))
-    }
-}
-
-.slide{
-    height: 200px;
-    width: 250px;
-    display: flex;
-    align-items: center;
-    padding: 15px;
-    perspective: 100px;
-}
-img{
-    width:100%;
-    transition: transform 1s;
-}
-
-img:hover{
-transform:translatez(20px);
-}
