@@ -14,61 +14,99 @@
 
 
 .cartoes{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-bottom: 10px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   padding-bottom: 10px;
 }
 
-.visa{
-   
-    width:50px;
-    height: 40px;
-   background-size: 100% 100%;
-    background-image: url(imagens/visa.png);
-    background-color: white;
-    margin: 10px;
-   
+.visa img{
+    
+    width: 40px;
+    height: 34px;
+    
 }
 
 .master{
     width:50px;
-    height: 40px;
-   background-size: 100% 100%;
-    background-image: url(imagens/master.png);
+    height: 30px;
+    justify-content: center;
     background-color: white;
-    margin: 10px;
+    align-items: center;
+    display: flex;
+    margin: 7px;
+    border-radius: 3px;
    
+}
+
+.master img{
+    
+    width: 30px;
+    height: 30px;
+    
 }
 
 .hiper{
     width:50px;
-    height: 40px;
-   background-size: 100% 100%;
-    background-image: url(imagens/hiper.png);
+    height: 30px;
+    justify-content: center;
     background-color: white;
-    margin: 10px;
-   
+    align-items: center;
+    display: flex;
+    margin: 7px;
+    border-radius: 3px;
+
+}
+
+.hiper img{
+    
+    width: 40px;
+    height: 18px;
+    
 }
 
 .elo{
     width:50px;
-    height: 40px;
-   background-size: 100% 100%;
-    background-image: url(imagens/elo.png);
-    background-color: white;
-    margin: 10px;
+    height: 30px;
+    justify-content: center;
+    background-color: rgb(10, 10, 10);
+    align-items: center;
+    display: flex;
+    margin: 7px;
+    border-radius: 3px;
    
+}
+
+.elo img{
+    
+    width: 45px;
+    height: 21px;
+    
 }
 
 .pix{
     width:50px;
-    height: 40px;
-   background-size: 100% 100%;
-    background-image: url(imagens/pix.png);
+    height: 30px;
+    justify-content: center;
     background-color: white;
-    margin: 10px;
+    align-items: center;
+    display: flex;
+    margin: 7px;
+    border-radius: 3px;
    
+}
+
+.pix img{
+    
+    width: 25px;
+    height: 25px;
+    
+}
+
+.foot p{
+    padding-top: 10px;
+    font-size: 10px;
+    
 }
 
 
