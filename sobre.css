@@ -29,6 +29,7 @@ header{
     padding: 30px 7%;
     align-items: center;
     transition: ease all .55s;
+    
 }
 .logo{
     display: flex;
@@ -72,14 +73,32 @@ header{
 }
 
 section{
-    padding: 9% 5%;
+    padding: 15% 2%;
+   
+   
+    
 }
+section{
+    width: 500px;
+    height: 300px;
+    margin: 100px auto;
+   
+}
+
 
 .hero{
 
     position: relative;
-    width: 100%;
-    height: 100vh;
+    width: 80%;
+    height: 70vh;
+    border-radius: 3%;
+   
+    
+
+    background: linear-gradient(135deg, rgba(7, 0, 0, 0.993),rgb(7, 1, 1));
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0);
+    box-shadow: 0 8px 32px 0 rgba(172, 167, 167, 0.37);
     
 
 }
@@ -87,25 +106,21 @@ section{
 .hero-img{
     height: 50%;
     width: 50%;
-    margin-right: 2px;
+   
 }
 
 
 .hero-text{
     width: 100%;
     height: 20%;
-    padding: 2%, 5%;
-
-  
-
 
     transform: translate(2%, 2%);
-    width: 100%;
-
+  
 }
     
 
 .hero-text h1{
+    
     font-family: audio;
     font-size: 2rem;
     font-weight: 500;
@@ -116,7 +131,6 @@ section{
 }
  .hero-text h1{
     letter-spacing: 8;
-    margin-bottom: 3px;
     position: relative;
     animation:  text 5s  1;
  }
@@ -142,7 +156,7 @@ section{
 
 .hero-text h4{
     font-family: museom;
-    margin: 5px 0 5px;
+    margin: 2px 0 5px;
     color: rgb(47, 255, 47);
     text-transform: uppercase;
     letter-spacing: 10px;
@@ -155,25 +169,15 @@ section{
 .hero-text p{
     font-family:'museom';
     font-size: 1rem;
-    font-weight: 200;
+    font-weight: 150;
     color: white;
     line-height: 7px;
     max-width: 550px;
-    margin-bottom: 5rem;
+    margin-bottom: 1rem;
     
 
 }
 
-.inicio{
-    padding: 2% 1%;
-}
-
-.inicio{
-    display: flex;
-    width: 100%;
-    height: 70vh;
-    align-items: center;
-}
 
 .imagem img{
     width: 80%;
@@ -181,55 +185,6 @@ section{
   
   
 }
-
-
-.banner{
-    
-    width: 50%;
-    height: 80%;
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    border-radius: 2rem;
-    box-shadow:rgba(233, 235, 238, 0.897)4px 10px 10px -5px;
-    margin-right: 10%;
-    
-    animation: banner 10s infinite;
-
-   
-
-
-}
-
-@keyframes banner {
-    0%, 30%{
-       background-image: url(produtos/impressora.PNG) ;
-       opacity: 1;
-      
-    }
-    31%, 34%{
-        opacity: 0.1;
-    }
-    35%, 65%{
-        background-image: url(produtos/epson.png);
-        opacity: 1;
-        
-     }
-     66%, 69%{
-        opacity: 0.1;
-    }
-     70%, 100%{
-        opacity: 1;
-        background-image: url(produtos/ton.png);
-        
-        
-        
-       
-     }
-}
-
-
-
-
 
 
 
