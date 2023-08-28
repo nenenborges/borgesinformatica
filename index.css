@@ -202,7 +202,7 @@ section{
 
 @keyframes banner {
     0%, 30%{
-       background-image: url(produtos/impressora.png) ;
+       background-image: url(impressora.png) ;
        opacity: 1;
       
     }
