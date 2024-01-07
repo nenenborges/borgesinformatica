@@ -1,0 +1,40 @@
+/*espcialidades*/
+.especialidade{
+    padding: 40px 10%;
+    display: flex;
+    align-content: center;
+   
+}
+.especialidade {
+    gap: 60px;
+}
+
+
+
+.especialidade .especialidade-box{
+    padding: 40px;
+    background-image:linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8) ), url(pc.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 2px;
+    margin-top: 15px;
+    border-radius: 20px;
+    box-shadow: 0 0 8px #fff;
+    color: #fff;
+}
+.especialidade-box h3{
+    font-size: 30px;
+    color: #00ff08;
+}
+
+.especialidade .especialidade-box  p {
+    font-size: 25px;
+}
+
+
+
+@media screen and (max-width: 940px) {
+    .especialidade{
+       flex-direction: column;
+    }
+}

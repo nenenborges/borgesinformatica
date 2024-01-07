@@ -2,235 +2,172 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    text-decoration: none;
-    list-style: none;
-    background-color: black;
 }
+
+/*fontes*/
 @font-face {
     font-family:'audio' ;
     src: url('fontes/Audiowide.ttf') format('opentype'), url('fontes/Audiowide.ttf') format('truetype');
-
-   
 }
 
 @font-face {
     font-family:'museom' ;
     src: url('fontes/MuseoModerno.ttf') format('opentype'), url('fontes/MuseoModerno.ttf') format('truetype');
 }
+/*-------------------------------------fontes*/
 
-header{
-    position: fixed;
-    top: 0;
-    right: 0;
-    z-index: 1000;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    padding: 30px 7%;
-    align-items: center;
-    transition: ease all .55s;
-}
-.logo{
-    display: flex;
-    align-items: center;
-    padding: 2px ;
+
+
+    body{
+        background-color: #000;
+        height: 100vh;
+    }
+
+
+
+    a{
+        color: #fff;
+        text-decoration: none;
+        transition: 0.3s;
     
+    }
+    a :hover{
+        opacity: 0.7;
+        color: #00ff08;
+    }
+    
+    nav{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 8vh;
+        padding: 50px 0%;
+    }
+    
+    .lista{
+        list-style: none;
+        display: flex;
+    }
+    .lista li{
+        letter-spacing: 3px;
+        margin-left: 32px;
+    }
+
+    .flex{
+        display: flex;
+    }
+    
+
+/* topo do site*/
+section .topo{ 
+    padding: 40px 4%;
 }
 
-.logo img{
-    display: flex;
+section.topo .flex{
     align-items: center;
-    width: 2rem;
-    height: 2rem;
+    justify-content: center;
+    gap: 90px;
 }
-.nome{
+
+.topo h1{
     color: white;
+    font-size: 35px;
     font-family: 'audio';
-    padding: 3px;
-    
-}
-
-.links {
-    display: flex;
-    font-family: museom;
-   
-}
-
-.links a{
-    font-weight: 600;
-    margin: 0 35px;
-    transition: all ease .55s;
-    color: white
-    
-    
 
 }
-
-.links a:hover{
-    color: rgb(0, 255, 0);
-
-}
-
-section{
-    padding: 9% 5%;
-}
-
-.hero{
-
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    
-
-}
-
-.hero-img{
-    height: 50%;
-    width: 50%;
-    margin-right: 2px;
-}
-
-
-.hero-text{
-    width: 100%;
-    height: 20%;
-    padding: 2%, 5%;
-
-  
-
-
-    transform: translate(2%, 2%);
-    width: 100%;
-
-}
-    
-
-.hero-text h1{
-    font-family: audio;
-    font-size: 2rem;
-    font-weight: 500;
-    color: white;
-    display: block;
-
-
-}
- .hero-text h1{
-    letter-spacing: 8;
-    margin-bottom: 3px;
-    position: relative;
-    animation:  text 5s  1;
- }
-
-
-@keyframes text{
-    0%{
-        color: black;
-        margin-bottom:  -40px;
-
-    }
-    30%{
-        letter-spacing: 25px;
-        margin-bottom: -40px;
-
-    }
-    85%{
-        letter-spacing: 8px;
-        margin-bottom: -40px;
-    }
-}
-
-
-.hero-text h4{
-    font-family: museom;
-    margin: 5px 0 5px;
-    color: rgb(47, 255, 47);
-    text-transform: uppercase;
-    letter-spacing: 10px;
-    font-size: 22px;
-    font-weight: 400;
-
-
-}
-
-.hero-text p{
+.topo h4{
+    color: #00ff08;
+    font-size: 20px;
     font-family:'museom';
-    font-size: 1rem;
-    font-weight: 200;
+    
+
+}
+.topo p{
     color: white;
-    line-height: 7px;
-    max-width: 550px;
-    margin-bottom: 5rem;
-    
-
-}
-
-.inicio{
-    padding: 2% 1%;
-}
-
-.inicio{
-    display: flex;
-    width: 100%;
-    height: 70vh;
-    align-items: center;
-}
-
-.imagem img{
-    width: 80%;
-    height: 80%;
+    font-size: 20px;
+    font-family:'museom';
   
-  
+    
+}
+.btn-contato button{
+    font-weight: 700;
+    border-radius: 5px;
+    margin-top: 20px;
+    
+}
+
+.btn-contato button{
+    background: #00ff08;
+    border:  2px solid #00ff08;
+    transform: skew(-10deg);
+    padding: 5px;
+    color: #000;
+   
+    
 }
 
 
-.banner{
+
+
+
+
+/*modo celular*/
+
+@media screen and (max-width: 940px) {
+     .flex{
+        flex-direction: column;
+     }
+
+     section .topo{ 
+        padding: 20px 6%; 
+    }
+
+
+     .topo h1{
+       padding-top: 30px;
+        font-size: 25px;
+        font-family: 'audio';
     
-    width: 50%;
-    height: 80%;
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    border-radius: 2rem;
-    box-shadow:rgba(233, 235, 238, 0.897)4px 10px 10px -5px;
-    margin-right: 10%;
+    } 
+
+    .topo p{
+        
+        font-size: 12px;
+        font-family:'museom';
+        
+    }
+    .pulsar{
+        left: 70%;
+        bottom: 30%;
+    }
+
+    .btn-contato button{ /*esconde buton*/
+       display: none;
     
-    animation: banner 10s infinite;
+    }
+
+    .topo .imagem-topo img{
+        width: 100%;
+    }
+
+    section.topo .flex{
+      
+        gap: 40px;
+    }
+    
+    .menu-desktop .logo{
+        padding: 30px ;
+        padding-top: 50px;
+    }
+    
+
+    .menu-desktop{
+        padding: 30px 3px ;
+        align-items: center;
+        justify-content: space-between;
+    }
 
    
-
-
 }
-
-@keyframes banner {
-    0%, 30%{
-       background-image: url(impressora.png) ;
-       opacity: 1;
-      
-    }
-    31%, 34%{
-        opacity: 0.1;
-    }
-    35%, 65%{
-        background-image: url(produtos/epson.png);
-        opacity: 1;
-        
-     }
-     66%, 69%{
-        opacity: 0.1;
-    }
-     70%, 100%{
-        opacity: 1;
-        background-image: url(produtos/ton.png);
-        
-        
-        
-       
-     }
-}
-
-
-
-
-
-
 
 

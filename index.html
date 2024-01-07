@@ -1,60 +1,117 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="PT-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="icon (1).ico" type="image/x-icon">
-    <title>Borges Informática</title>
     <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="zapstyle.css">
-    <link rel="stylesheet" href="animation.css">
+    <link rel="stylesheet" href="whatsapp.css">
+    <link rel="stylesheet" href="especialidade.css">
+    <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="banner.css">
+
+    <link rel="shortcut icon" href="icon.ico" type="image/x-icon">
+
+    <script src="menu.js"defer></script> <!-- java script do menu-->
+
+    <title>Borges Informática</title>
 </head>
 <body>
-    
-<header>
-    <a href="#"class="logo"> <img src="logo.png" alt=""><i class="nome">BORGES INFORMÁTICA</i> </a>
-    
+    <header>
+       
+          
+            <nav class="menu-desktop">
 
-    <ul class="links">
-        <li> <a href="#">Inicio</a></li>
-        <li> <a href="https://api.whatsapp.com/send?l=pt&amp;phone=5586995681475">Contato</a></li>
-        <li> <a href="sobre.html">Sobre</a></li>
-        <li> <a href="https://www.ton.com.br/catalogo/?referrer=C5BA4F4D-CFEA-47FA-93A6-C8518A2D6B1E&utm_medium=invite_share&utm_source=revendedor">Compre</a></li>
-    </ul>
-   
-    
-</header>
+                <a class="logo" href="#">
+                    <img src="imagens/logo.png" alt="Logo do Site" width="50px">
+                   
+                </a>
 
-<section class="hero">
-    <div class="hero-text">
-        <h1>BORGES INFORMÁTICA</h1>
-        <h4>ASSISTÊNCIA TÉCNICA</h4>
-        <P>Assistência Técnica em Informática e Impressoras Epson </P>
-        
-    </div><!---texto-->
+                 <!--- menu -->
+                 <button class="menu"  onclick="menuShow()">
+                    <div class="linha1"></div>
+                    <div class="linha2"></div>
+                    <div class="linha3"></div>
+                 </button><!----menu-->
 
-    <div class="inicio">
-
-            <div class="banner">
                
-            </div><!--banner-->
 
-            <div class="imagem"> <img src="gabinete.png" ></div>
-           
-           
+               
+                <ul class="lista">
+                    <li><a href="#">INÍCIO</a></li>
+                    <li><a href="">SERVIÇOS</a></li>
+                    <li><a href="sobre.html">SOBRE</a></li>
+                    <li><a href="https://api.whatsapp.com/send?l=pt&amp;phone=5586995681475">CONTATO</a></li>
+                    
+                </ul>
 
-    </div><!---hero-in-->
+               
+
+                </div>
+               
+
+            </nav>
+
+        </div>
     
 
-    
-    <a href="https://api.whatsapp.com/send?l=pt&amp;phone=5586995681475" class="pulsar">
-    
-        <img src="./zap.png" alt="phone">
-        
-    </a>
+    </header>
 
-</section>
     
     
+    <main>
+        <section class="topo">
+            <div class="interface">
+                <div class="flex">
+                    <div class="texto">
+                        <h1>BORGES INFORMÁTICA</h1>
+                        <h4>ASSISTÊNCIA TÉCNICA</h4>
+                        <P>Assistência Técnica em Informática e Impressoras Epson </P>
+                        <div class="btn-contato"><a href="#"><button>Entre em contato</button></a></div>
+                    </div><!--interface-->
+                        <div class="imagem-topo">
+                                <img src="imagens/image.png" alt="" width="400px">
+                        </div><!--imagem topo-->
+                </div><!--flex-->
+            </div><!--texto-->
+               
+        </section>
+            <section>
+                <div class="especialidade">
+                   
+                   
+
+                            <div class="especialidade-box">
+                               
+                                <h3>Serviços</h3>
+
+                                <p>Concertos e formatação de computadores, <br> 
+                                Fazemos manutenção em impressoras Epson <br>
+                                e cannon, serviços como 
+                                limpeza, resets e troca de peças
+                                </p>
+                            </div>
+
+                            <div class="especialidade-box">
+                               
+                                <h3>Produtos</h3>
+                                
+                                <p>Trabalhamos com peças para<br> 
+                                impressoras Epson  e<br>
+                                computadores em geral
+                                </p>
+                            </div>  
+                      
+                </div>
+                
+               
+            </section>
+          
+    </main>
+
+            <a href="https://api.whatsapp.com/send?l=pt&amp;phone=5586995681475" class="pulsar">
+            
+                <img src="./zap.png" alt="phone">
+                
+            </a>
 </body>
 </html>
