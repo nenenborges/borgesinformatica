@@ -166,8 +166,49 @@ section.topo .flex{
         align-items: center;
         justify-content: space-between;
     }
-
    
 }
+
+/* fundo do site*/
+
+.fundogeral{
+    width: 100%;
+   padding: 70px 30px 20px;
+
+}
+.socialicones{
+    display: flex;
+    justify-content: center;
+}
+
+.socialicones a{
+    text-decoration: none;
+    padding: 10px; 
+    margin: 10px;
+    border-radius: 50px;
+    justify-content: center;
+}
+
+.socialicones img{
+    width: 25px;
+    color: #000;
+    opacity: 0.4;
+    transition: all 0.4s;
+}
+
+
+.socialicones a :hover{
+    opacity: 100%;
+    transform: translatey(-5px);
+    
+}
+.fundonav{
+    background-color: #191a19;
+    padding: 20px;
+    text-align: center;
+}
+.fundonav{
+    color: #fff;
+} /* fim do fundo */
 
 
